@@ -10,9 +10,6 @@ function routes (app) {
   app.use('/api/parqueo/registro', parqueadero);
   app.use('/api/reinicio/mes', reinicio);
   app.use('/api/cuenta/cobro', cuenta);
-
-  //Endpoint para credenciales y rol de acceso
-  //app.use('/auth/local', authLocal);
 }
 
 module.exports = routes;

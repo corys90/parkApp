@@ -13,12 +13,7 @@ async function cuentaCobroResidentes() {
     if (upVehiculosResidentes){
 
       const fileName = 'temp/cuenta.txt';
-      //Borra si existe
-      /*await fs.unlink(fileName, function (err) {
-        if (err) throw err;
-      });*/
-      //Crea archivo y añade la info
-      let line = `placa,  estancia(min), valor a pagar\n`;
+        let line = `placa,  estancia(min), valor a pagar\n`;
       await fs.writeFile(fileName, line, ()=>{true});
       upVehiculosResidentes.forEach(async (vhcl) => {
         line = `${vhcl.placa}, ${vhcl.estancia}, ${vhcl.estancia * 0.02}\n`;

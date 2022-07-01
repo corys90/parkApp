@@ -6,11 +6,11 @@ async function reporte(req, res) {
 
     if (resultado){
 
-        res.status(200).json({message:"Listado ejecutado con exito.", listado: resultado});
+        res.status(200).json({message:"Listado ejecutado con éxito.", listado: resultado});
 
     }else{
 
-        res.status(400).json({message:"Se pesentó un problema en el proceso de listado."});
+        res.status(400).json({message:"Se pesentó un problema en el proceso de geeración del listado de cuetas de cobro."});
 
     }
 }
