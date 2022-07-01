@@ -15,6 +15,8 @@ function restarFechas(fechaInicial, fechafinal){
 function difHorasAminutos(hhinicial, hhfinal){
 
     let hi;
+
+    // cambia de formato AMPM a 24 horas
     if (hhinicial.lastIndexOf("PM")){
         hi = hhinicial.split(":")[0] + 12;
     }else{

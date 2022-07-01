@@ -3,8 +3,6 @@ const parqueadero = require('./api/parqueo');
 const reinicio = require('./api/reinicio');
 const cuenta = require('./api/cuenta');
 
-//const authLocal = require('./auth/local');
-
 function routes (app) {
   app.use('/api/vehiculo/registro', vehiculo);
   app.use('/api/parqueo/registro', parqueadero);
